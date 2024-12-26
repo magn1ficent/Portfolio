@@ -9,9 +9,10 @@ function cancel() {
 }
 
 const texts = [
-    "DEVELOPER",
-    "DESIGNER",
-    "GENIUS"
+    "GENIUS.",
+    "BILLIONAIRE.",
+    "PLAYBOY.",
+    "PHILANTHROPIST.",
 ]
 
 let speed = 100;
