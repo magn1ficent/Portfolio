@@ -139,7 +139,7 @@ section .main-container {
 
 .main-container .image {
     width: 500px;
-    height: 80vh;
+    height: 70vh;
     border-radius: 100%;
     overflow: hidden;
     box-shadow: 0 0 50px #b74b4b;
@@ -169,7 +169,7 @@ section .main-container {
 
 .main-container .content {
     color: white;
-    width: 40%;
+    width: 50%;
 }
 
 .content h1 {
