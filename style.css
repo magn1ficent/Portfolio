@@ -21,12 +21,11 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: black;
 }
 
 ::-webkit-scrollbar-thumb {
     background: #b74b4b;
-    border-radius: 12px;
     transition: all 0.3s ease;
 }
 
