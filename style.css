@@ -137,7 +137,7 @@ section {
 section .main-container {
     display: flex;
     justify-content: space-between;
-    padding-left: 100px;
+    padding-left: 130px;
     align-items: center;
 }
 
