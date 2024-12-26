@@ -136,8 +136,8 @@ section {
 section .main-container {
     display: flex;
     justify-content: space-between;
-    padding-left: 130px;
     align-items: center;
+    padding-left: 130px;
 }
 
 .main-container .image {
@@ -259,6 +259,9 @@ section.content {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 50px; /* Adds space on left and right */
+    max-width: 1200px; /* Keeps content centered */
+    margin: 0 auto; /* Centers the container */
 }
 
 .heading {
@@ -276,7 +279,7 @@ section.content {
     height: 400px;
     width: 400px;
     object-fit: cover;
-    border-radius: 12px;
+    border-radius: 200px;
 }
 
 .about-details .right {
