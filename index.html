@@ -13,19 +13,19 @@
         <div class="nav-container">
             <div class="logo" data-aos-duration="1500"></div>
             <div class="links">
-                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="#">Home</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#">About</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#">Projects</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="#">Contact</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="#home">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#about">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#projects">Projects</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="#contact">Contact</a></div>
             </div>
             <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
         </div>
             <div class="dropdown">
                 <div class="links">
-                    <a href="#">Home</a>
-                    <a href="#">About</a>
-                    <a href="#">Projects</a>
-                    <a href="#">Contact</a>
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
                     <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
                 </div>
             </div>
@@ -37,9 +37,9 @@
                 <img src="main.jpg" alt="">
             </div>
             <div class="content">
-                <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">Hello, I am <span>Alzhan Kuzhabayev</span></h1>
-                <div class="typewriter" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900">I'm a <span class="typewriter-text"></span><label for=""></label></div>
-                <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quo tenetur sint expedita atque labore totam voluptatum odit quia vero. Sequi maiores itaque sapiente, quia tempora nemo mollitia magni laudantium.</p>
+                <h1 data-aos="fade-right" data-aos-duration="1500" data-aos-delay="700">Welcome to <span>Alzhan Kuzhabayev's</span> Portfolio</h1>
+                <div class="typewriter" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="900">I'm a <span class="typewriter-text"></span><label for=""></label></div>
+                <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100">Young mobile developer on React Native</p>
                 <div class="social-links">
                     <a href="https://github.com/magn1ficent" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300" target="_blank">
                         <i class="fa-brands fa-github"></i>
@@ -63,7 +63,7 @@
                     <img src="main2.jpg" alt="">
                 </div>
                 <div class="right">
-                    <div class="topic" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="200">Backend Developer</div>
+                    <div class="topic" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="200">Mobile Developer</div>
                     <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="300"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, iure cum, excepturi consequuntur numquam laudantium dicta, eligendi repudiandae mollitia praesentium quisquam. Neque omnis cumque, impedit corporis ea tenetur consequatur nulla.</p>
                     <div class="button" data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="400">
                         <button>Learn More</button>
@@ -88,7 +88,7 @@
                     <div class="icon">
                         <i class="fas fa-mobile-alt"></i>
                     </div>
-                    <div class="topic">Chto-nibud' napishu</div>
+                    <div class="topic">Supplier-Consumer Platform</div>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum, minus nesciunt. Quia quibusdam delectus corporis fugit possimus! Dolore architecto omnis odio asperiores, fugit quos sequi sint ad sit nesciunt cum.</p>
                 </div>
                 <div class="box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600">
@@ -104,18 +104,61 @@
 
     <section class="contact" id="contact">
         <div class="content">
-            <h2 class="heading"><span>Contact </span>Me</h2>
-            <div class="text">
-                <div class="topic" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">Have Any Project?</div>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis, optio sint. Consequatur incidunt sit inventore? Enim, animi. Rem voluptates earum quasi quibusdam repudiandae, voluptatum aspernatur quidem similique. Officiis, ducimus saepe.</p>
-                <div class="button" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="400"><a href="https://t.me/the_seventh_hokage" target="_blank"><button>Let's Chat</button></a></div>
-            </div>
+
+            <h2 class="heading" data-aos="fade-up" data-aos-duration="1500">
+                <span>Contact </span>Me
+            </h2>
+
+            <form class="contact-form" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+                <input type="hidden" name="_subject" value="New Portfolio Message">
+                <input type="hidden" name="_captcha" value="false">
+
+                <input 
+                    type="text" 
+                    name="name" 
+                    placeholder="Your Name" 
+                    required
+                    data-aos="fade-right"
+                    data-aos-duration="1500"
+                    data-aos-delay="300"
+                >
+
+                <input 
+                    type="email" 
+                    name="email" 
+                    placeholder="Your Email" 
+                    required
+                    data-aos="fade-left"
+                    data-aos-duration="1500"
+                    data-aos-delay="400"
+                >
+
+                <textarea 
+                    name="message" 
+                    placeholder="Your Message" 
+                    required
+                    data-aos="fade-right"
+                    data-aos-duration="1500"
+                    data-aos-delay="500"
+                ></textarea>
+
+                <div class="button" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="600">
+                    <button type="submit">Send Message</button>
+                </div>
+
+                <p class="form-status success" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="700">
+                    Message sent successfully ✓
+                </p>
+                <p class="form-status error" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="700">
+                    Something went wrong. Try again.
+                </p>
+            </form>
         </div>
     </section>
 
     <footer>
         <div class="text">
-            <span> Created by <a href="#">Alzhan Kuzhabayev</a> | &#169; 2024 All Rights Reserved.</span>
+            <span> Created by <a href="#">Alzhan Kuzhabayev</a> | &#169; 2026 All Rights Reserved.</span>
         </div>
     </footer>
 

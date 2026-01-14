@@ -49,3 +49,35 @@ function eraseText () {
 }
 
 window.onload = typeWriter
+
+const form = document.querySelector('.contact-form');
+const successMsg = document.querySelector('.form-status.success');
+const errorMsg = document.querySelector('.form-status.error');
+
+form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    successMsg.style.display = 'none';
+    errorMsg.style.display = 'none';
+
+    const formData = new FormData(form);
+
+    try {
+        const res = await fetch('https://formsubmit.co/ajax/kuzhabaev1@gmail.com',
+            {
+                method: 'POST',
+                headers: { 'Accept': 'application/json' },
+                body: formData
+            }
+        );
+
+        if (res.ok) {
+            form.reset();
+            successMsg.style.display = 'block';
+        } else {
+            errorMsg.style.display = 'block';
+        }
+    } catch {
+        errorMsg.style.display = 'block';
+    }
+});

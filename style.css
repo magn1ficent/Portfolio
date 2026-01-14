@@ -506,3 +506,55 @@ footer .text span a:hover {
         margin-top: 15px;
     }
 }
+
+.contact-form {
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 14px;
+    margin: 10px 0;
+    background: transparent;
+    border: 2px solid #b74b4b;
+    border-radius: 6px;
+    color: white;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 150px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    background-color: rgba(183, 75, 75, 0.1);
+    box-shadow: 0 0 10px #b74b4b;
+}
+
+.contact-form ::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.form-status {
+    display: none;
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.form-status.success {
+    color: #b74b4b;
+    text-shadow: 0 0 10px #b74b4b;
+}
+
+.form-status.error {
+    color: red;
+}
